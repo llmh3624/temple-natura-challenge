@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Natura</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/9a3becb4d0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #e2dcd5;
+        font-family: "Poppins", sans-serif;
+        color: #183b34;
+      }
+
+      .hero {
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/573/original/garden.png?1682859346);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px 0px 30px 0;
+        padding: 250px;
+        border: 2px solid #bd9a21;
+      }
+
+      header {
+        padding: 30px;
+        border-radius: 5px;
+        background-color: rgb(226, 220, 213, 0.5);
+      }
+
+      header h1 {
+        font-size: 60px;
+      }
+
+      .page-links h3 {
+        padding: 0px 20px;
+        text-decoration: none;
+        color: #62740d;
+      }
+
+      .page-links h3:hover {
+        color: #183b34;
+      }
+
+      .about-information {
+        padding: 20px;
+      }
+
+      .philosophy-desciption {
+        margin: 20px;
+      }
+
+      h2 {
+        font-size: 40px;
+        text-align: center;
+        margin: 10px;
+      }
+
+      h3 {
+        font-size: 28px;
+        text-align: center;
+        color: #62740d;
+      }
+
+      .menu-section {
+        padding-bottom: 20px;
+      }
+
+      .dishes-information {
+        margin: 50px;
+      }
+
+      .dishes-information h3 {
+        font-size: 30px;
+        color: #183b34;
+        text-align: left;
+      }
+
+      .menu-example {
+        background-color: #b9bcaf;
+        margin: 0px auto;
+        display: block;
+        border: 2px solid;
+        border-radius: 3px #183b34;
+      }
+
+      .menu-dish {
+        border: 2px solid #183b34;
+        border-radius: 2px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .menu-philosphy-text {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px;
+      }
+
+      .menu-information h4 {
+        margin: 50px;
+        font-size: 30px;
+      }
+
+      .menu-button {
+        background-color: #183b34;
+        color: #b9bcaf;
+        margin-top: 10px;
+        padding: 20px;
+        border: 2px solid #b9bcaf;
+        border-radius: 3px;
+        text-decoration: none;
+      }
+
+      .menu-button:hover {
+        border: 2px solid #183b34;
+        background-color: #b9bcaf;
+        color: #183b34;
+        transition: all 200ms ease;
+      }
+
+      .restaurant-information {
+        background-color: #b9bcaf;
+        margin: 10px;
+        border: 1px solid #62740d;
+        border-radius: 3px;
+      }
+
+      .restaurant-information h3 {
+        color: #183b34;
+      }
+
+      .location-information {
+        background-color: #183b34;
+        margin: 0px auto;
+        display: block;
+        border: 2px solid #62740d;
+        border-radius: 3px;
+      }
+
+      .restaurant-map {
+        margin: 25px;
+      }
+
+      h5 {
+        color: #b9bcaf;
+        font-size: 40px;
+        margin: 13px;
+      }
+
+      .reservation-button {
+        color: #b9bcaf;
+        text-decoration: none;
+        border: 2px solid #b9bcaf;
+        font-size: 18px;
+        margin: 18px;
+        padding: 8px;
+      }
+
+      .reservation-button:hover {
+        color: #183b34;
+        font-size: 20px;
+        font-weight: 600;
+        transition: all 200ms ease;
+        background-color: #b9bcaf;
+      }
+
+      .dashed-line {
+        display: block;
+        height: 1px;
+        border: 0;
+        border: 1px solid #183b34;
+        margin: 10px 30px;
+        padding: 0;
+      }
+
+      .icon-information {
+        font-size: 30px;
+        margin: 10px;
+        display: block;
+        align-items: center;
+        text-align: center;
+        color: #183b34;
+        text-decoration: none;
+        padding-top: 15px;
+      }
+
+      .links {
+        text-decoration: none;
+        color: #183b34;
+      }
+
+      .links:hover {
+        color: #62740d;
+      }
+
+      .email {
+        font-size: 15px;
+      }
+
+      .social-links {
+        font-size: 30px;
+        margin: 20px 10px;
+        color: #183b34;
+      }
+
+      .social-links:hover {
+        color: #62740d;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/575/original/logo.png?1682859367"
+      alt="Temple Natura Logo"
+      width="250"
+      class="temple-natura-logo mx-auto d-block"
+    />
+
+    <div class="hero text-center">
+      <header>
+        <h1>Come to experience a wonderful vegan meal!</h1>
+      </header>
+    </div>
+
+    <div class="d-flex justify-content-center page-links">
+      <a href="#about" class="page-link"><h3>About Us</h3></a>
+      <a href="#menu" class="page-link"><h3>Menu</h3></a>
+      <a href="#location" class="page-link"><h3>Location</h3></a>
+    </div>
+
+    <hr />
+
+    <div id="about" class="about-us-section text-center">
+      <h2>About Us</h2>
+      <div class="container about-information">
+        <div class="row">
+          <div class="col philosophy-desciption">
+            <h3>Our Philosophy</h3>
+            <p>
+              Temple Natura is a serene urban oasis in Palma that has been
+              offering a unique dining experience for the past 15 years. They
+              promote a healthy lifestyle by creating artisanal vegan and
+              vegetarian cuisine infused with cultural flavors. Their menu
+              highlights local and seasonal ingredients from Mediterranean
+              cuisine and the aromatic spices of Colombian dishes. The tranquil
+              space is crowned by a century-old mandarin tree, providing a
+              unique dining experience where visitors can indulge in delectable
+              food and drink while being surrounded by nature.
+              <br />
+              <br />
+              <strong
+                >Join us at Temple Natura and treat yourself to a one-of-a-kind
+                dining experience that nourishes both your body and
+                soul.</strong
+              >
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/572/original/garden2.png?1682859339"
+              class="img-fluid"
+              width="90%"
+              alt="Temple Natura Garden"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div id="menu" class="menu-section">
+      <h2>Menu</h2>
+      <div class="container menu-example">
+        <div class="row">
+          <div class="col-6 menu-dishes">
+            <div class="row d-flex flex-columnmb-5 dishes-information">
+              <div class="col">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/574/original/lemonade.png?1682859362"
+                  width="200"
+                  class="menu-dish"
+                  alt="Temple Natura's Lemonade"
+                />
+              </div>
+              <div class="col menu-desciption">
+                <h3>Lemonade</h3>
+                <p>
+                  Temple's special lemonade made with seasonal fruits and mint
+                </p>
+              </div>
+            </div>
+
+            <div class="row dishes-information">
+              <div class="col menu-desciption">
+                <h3>American Burger</h3>
+                <p>
+                  With cheese, tomato, caramelized onion and bacon. Served with
+                  potatoes
+                </p>
+              </div>
+              <div class="col">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/571/original/burger.png?1682859318"
+                  width="250"
+                  class="menu-dish"
+                  alt="Temple Natura's Burger"
+                />
+              </div>
+            </div>
+
+            <div class="row dishes-information">
+              <div class="col">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/567/original/brownie.png?1682859305"
+                  width="200"
+                  class="menu-dish"
+                  alt="Temple Natura's Brownie"
+                />
+              </div>
+              <div class="col menu-desciption">
+                <h3>Brownie</h3>
+                <p>
+                  Cocoa brownie with nuts, served with vanilla ice cream and
+                  fresh fruit
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex justify-content-center">
+            <div class="row">
+              <div class="col text-center menu-information">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/576/original/menu-description.png?1682859376"
+                  alt="Menu Description Temple Natura"
+                  class="menu-philosphy-text"
+                  width="80%"
+                  height="50%"
+                />
+                <h4>Amazing food and cocktails that are all vegan!</h4>
+                <a
+                  href="https://templenatura.es/wp-content/uploads/2023/04/Menu-Temple-Online-Version-EN.pdf"
+                  title="Temple Natura's Menu in English"
+                  target="_blank"
+                  class="menu-button"
+                  >Take a look at their extensive menu</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div id="location" class="location-section text-center">
+      <h2>Location</h2>
+      <div class="container location-information">
+        <div class="row">
+          <div class="col-6 d-flex justify-content-center">
+            <div class="restaurant-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.6386475171225!2d2.6523777174438474!3d39.567754700000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297924dcefe4401%3A0xaac22c655e2e675b!2sTemple%20Natura%20Caf%C3%A9%20Garden!5e0!3m2!1ses!2ses!4v1682858040602!5m2!1ses!2ses"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <h5>Want to book a table?</h5>
+              <a
+                href="https://cuiner.net/reservasonline/templenatura/en"
+                title="Book a reservation"
+                class="reservation-button"
+                >Click Here</a
+              >
+            </div>
+          </div>
+
+          <div class="col-6 d-flex justify-content-center">
+            <div class="restaurant-information">
+              <a
+                href="https://goo.gl/maps/WozbTv95Xms9NcVr8"
+                target="_blank"
+                class="links"
+                title="Temple Natura Location"
+                ><i class="fa-solid fa-location-dot icon-information links"></i
+              ></a>
+              <hr class="dashed-line" />
+              <h3>
+                C/ Temple Nº4, Bottom 07001, Palma de Mallorca Baleari Islands,
+                Spain
+              </h3>
+              <i class="fa-regular fa-clock icon-information"></i>
+              <hr class="dashed-line" />
+              <h3>Thursday - Sunday</h3>
+              <p>12.00 – 17.30 hrs and 19.00 – 23.30 hrs</p>
+              <h3>Monday</h3>
+              <p>12.00 – 17.00 hrs</p>
+
+              <i class="fa-solid fa-phone icon-information"></i>
+              <hr class="dashed-line" />
+              <h3>+34 971 71 86 88</h3>
+              <i class="fa-solid fa-envelope icon-information"></i>
+              <hr class="dashed-line" />
+              <a
+                href="mailto:templenaturacafegarden@gmail.com"
+                class="links"
+                title="Temple Natura's Email"
+              >
+                <h3 class="email links">templenaturacafegarden@gmail.com</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="separation-line" />
+
+    <footer class="text-center">
+      <a
+        href="https://www.instagram.com/temple_natura/"
+        target="_blank"
+        title="Instagram - Temple Natura"
+      >
+        <i class="fa-brands fa-instagram social-links"></i
+      ></a>
+      <a
+        href="https://www.facebook.com/templenaturapalma"
+        target="_blank"
+        title="Facebook - Temple Natura"
+      ></a
+      ><i class="fa-brands fa-facebook social-links"></i>
+      <a
+        href="https://www.tripadvisor.es/Restaurant_Review-g187463-d3703027-Reviews-Temple_Natura_Cafe_Garden-Palma_de_Mallorca_Majorca_Balearic_Islands.html"
+        target="_blank"
+        title="TripAdvisor - Temple Natura"
+        ><i class="fa-sharp fa-solid fa-plane social-links"></i
+      ></a>
+      <a
+        href="https://www.happycow.net/reviews/temple-natura-mallorca-46856"
+        target="_blank"
+        title="HappyCow - Temple Natura"
+        ><i class="fa-solid fa-cow social-links"></i
+      ></a>
+      <a
+        href="https://es.restaurantguru.com/Temple-Natura-Palma"
+        target="_blank"
+        title="Restaurant Guru - Temple Natura"
+        ><i class="fa-solid fa-utensils social-links"></i
+      ></a>
+    </footer>
+  </body>
+</html>
