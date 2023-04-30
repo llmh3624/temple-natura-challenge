@@ -24,8 +24,16 @@
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dynalight&family=Edu+QLD+Beginner:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
 
@@ -54,7 +62,7 @@
       }
 
       header h1 {
-        font-size: 60px;
+        font-size: 50px;
       }
 
       .page-links h3 {
@@ -67,6 +75,15 @@
         color: #183b34;
       }
 
+      .separation-line {
+        display: block;
+        height: 1px;
+        border: 0;
+        border: 1px solid #183b34;
+        margin: 10px 30px;
+        padding: 0;
+      }
+
       .about-information {
         padding: 20px;
       }
@@ -76,15 +93,20 @@
       }
 
       h2 {
-        font-size: 40px;
+        font-size: 50px;
         text-align: center;
         margin: 10px;
+        font-family: "Dynalight", cursive;
       }
 
       h3 {
         font-size: 28px;
         text-align: center;
         color: #62740d;
+      }
+
+      h5 {
+        font-family: "Dynalight", cursive;
       }
 
       .menu-section {
@@ -96,9 +118,18 @@
       }
 
       .dishes-information h3 {
-        font-size: 30px;
-        color: #183b34;
+        font-size: 40px;
+        color: #b9bcaf;
         text-align: left;
+      }
+
+      .menu-description p {
+        color: #bdc595;
+        font-size: 20px;
+      }
+
+      .menu-dishes {
+        background-color: #183b34;
       }
 
       .menu-example {
@@ -110,8 +141,6 @@
       }
 
       .menu-dish {
-        border: 2px solid #183b34;
-        border-radius: 2px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -157,6 +186,10 @@
         color: #183b34;
       }
 
+      .location-section {
+        padding-bottom: 20px;
+      }
+
       .location-information {
         background-color: #183b34;
         margin: 0px auto;
@@ -192,14 +225,6 @@
         background-color: #b9bcaf;
       }
 
-      .dashed-line {
-        display: block;
-        height: 1px;
-        border: 0;
-        border: 1px solid #183b34;
-        margin: 10px 30px;
-        padding: 0;
-      }
 
       .icon-information {
         font-size: 30px;
@@ -256,7 +281,7 @@
       <a href="#location" class="page-link"><h3>Location</h3></a>
     </div>
 
-    <hr />
+    <hr class="separation-line" />
 
     <div id="about" class="about-us-section text-center">
       <h2>About Us</h2>
@@ -295,7 +320,7 @@
       </div>
     </div>
 
-    <hr />
+    <hr class="separation-line" />
 
     <div id="menu" class="menu-section">
       <h2>Menu</h2>
@@ -303,6 +328,9 @@
         <div class="row">
           <div class="col-6 menu-dishes">
             <div class="row d-flex flex-columnmb-5 dishes-information">
+              <h2 class="text-center" style="color: #b9bcaf">
+                ~Signature dishes~
+              </h2>
               <div class="col">
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/574/original/lemonade.png?1682859362"
@@ -311,7 +339,7 @@
                   alt="Temple Natura's Lemonade"
                 />
               </div>
-              <div class="col menu-desciption">
+              <div class="col menu-description">
                 <h3>Lemonade</h3>
                 <p>
                   Temple's special lemonade made with seasonal fruits and mint
@@ -320,7 +348,7 @@
             </div>
 
             <div class="row dishes-information">
-              <div class="col menu-desciption">
+              <div class="col menu-description">
                 <h3>American Burger</h3>
                 <p>
                   With cheese, tomato, caramelized onion and bacon. Served with
@@ -346,7 +374,7 @@
                   alt="Temple Natura's Brownie"
                 />
               </div>
-              <div class="col menu-desciption">
+              <div class="col menu-description">
                 <h3>Brownie</h3>
                 <p>
                   Cocoa brownie with nuts, served with vanilla ice cream and
@@ -362,8 +390,8 @@
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/079/576/original/menu-description.png?1682859376"
                   alt="Menu Description Temple Natura"
                   class="menu-philosphy-text"
-                  width="80%"
-                  height="50%"
+                  width="100%"
+                  height="60%"
                 />
                 <h4>Amazing food and cocktails that are all vegan!</h4>
                 <a
@@ -379,7 +407,7 @@
         </div>
       </div>
     </div>
-    <hr />
+    <hr class="separation-line" />
 
     <div id="location" class="location-section text-center">
       <h2>Location</h2>
@@ -415,23 +443,23 @@
                 title="Temple Natura Location"
                 ><i class="fa-solid fa-location-dot icon-information links"></i
               ></a>
-              <hr class="dashed-line" />
+              <hr class="separation-line" />
               <h3>
                 C/ Temple Nº4, Bottom 07001, Palma de Mallorca Baleari Islands,
                 Spain
               </h3>
               <i class="fa-regular fa-clock icon-information"></i>
-              <hr class="dashed-line" />
+              <hr class="separation-line" />
               <h3>Thursday - Sunday</h3>
               <p>12.00 – 17.30 hrs and 19.00 – 23.30 hrs</p>
               <h3>Monday</h3>
               <p>12.00 – 17.00 hrs</p>
 
               <i class="fa-solid fa-phone icon-information"></i>
-              <hr class="dashed-line" />
+              <hr class="separation-line" />
               <h3>+34 971 71 86 88</h3>
               <i class="fa-solid fa-envelope icon-information"></i>
-              <hr class="dashed-line" />
+              <hr class="separation-line" />
               <a
                 href="mailto:templenaturacafegarden@gmail.com"
                 class="links"
